@@ -6,8 +6,8 @@ using System.Linq;
 
 public class CharStatsHandler : MonoBehaviour
 {
-    private CharStats baseStats; //base 
-    public CharStats CurrentStats;
+    private PlayerStats baseStats; //base 
+    public PlayerStats CurrentStats;
     
     //public List<CharStats> statsModifiers = new List<CharStats>();  //나중에 아이템 먹고 추가할 스테이터스 생기면 이걸 씀
 
