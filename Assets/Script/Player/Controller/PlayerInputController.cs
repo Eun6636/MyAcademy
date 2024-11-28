@@ -21,7 +21,7 @@ public class PlayerInputController : CharController
 
     public void OnLook(InputValue value)
     {
-        // Debug.Log("OnLook" + value.ToString());
+        Debug.Log("OnLook" + value.ToString());
         Vector2 newAim = value.Get<Vector2>();
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
         newAim = (worldPos - (Vector2)transform.position).normalized;
@@ -33,9 +33,15 @@ public class PlayerInputController : CharController
         }
     }
 
-    public void OnFire(InputValue value)  //실질적으로 여기서 검사
+    public void OnSkill1(InputValue value)  //실질적으로 여기서 검사
     {
-        //Debug.Log("OnFire" + value.ToString()); 
+        Debug.Log("Skill1" + value.ToString()); 
+        IsAttacking = value.isPressed;
+    }
+
+    public void OnSkill2(InputValue value)  //실질적으로 여기서 검사
+    {
+        Debug.Log("Skill2" + value.ToString()); 
         IsAttacking = value.isPressed;
     }
 }
