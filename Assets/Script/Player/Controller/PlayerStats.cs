@@ -40,7 +40,7 @@ public class PlayerStats
     [Range(50f, 500f)] public float p_defense;
 
     //원소 친화도
-    [Header("원소 친화도")]
+    //[Header("원소 친화도")]
     //빛
 
     //어둠

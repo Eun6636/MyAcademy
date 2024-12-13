@@ -48,4 +48,12 @@ public class SkillManager : MonoBehaviour
     {
         Job.Skill2(position, rotation);
     }
+
+
+
+
+    //버프 매니저
+
+
+    //디버프 매니저
 }
