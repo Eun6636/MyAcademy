@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
 
     private void ApplyMovment(Vector2 direction)
     {
-        direction = direction * _stats.CurrentStats.Speed;
+        direction = direction * _stats.CurrentStats.curMoveSpeed;
         _rigidbody.velocity = direction;
     }
 
