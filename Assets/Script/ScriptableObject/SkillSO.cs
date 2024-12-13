@@ -6,6 +6,7 @@ public class SkillSO : ScriptableObject
 {
     public string skillName;
     public GameObject skillObject;
+    public Sprite skillSprite;
     public Collider2D sKillCollider;
     public float baseDamage;
     public float cooldown; //ÄğÅ¸ÀÓ

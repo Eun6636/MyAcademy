@@ -15,27 +15,32 @@ public class PlayerStats
 {
     //Pleasure Level 즐거움레벨
     //체력
+    [Header("체력")]
     public int physicalStrengthLV;
     [Range(500, 3000)] public int maxHealth;
     [Range(0, 3000)] public int curHealth;
 
     //민첩
+    [Header("민첩")]
     public int quicknessLV;
     [Range(1f, 20f)] public float maxMoveSpeed;
     [Range(1f, 20f)] public float curMoveSpeed;
     [Range(1f, 2f)] public float attackSpeed;
 
     //지력
+    [Header("지력")]
     public int intellectualLV;
     [Range(50f, 500f)] public float M_attackPower;
     [Range(1f, 500f)] public float AdvancedManaManagement;//고급마나운용
 
     //근력
+    [Header("근력")]
     public int muscularStrengthLV;
     [Range(50f, 500f)] public float p_attackPower;
     [Range(50f, 500f)] public float p_defense;
 
-    //원소 숙련도
+    //원소 친화도
+    [Header("원소 친화도")]
     //빛
 
     //어둠

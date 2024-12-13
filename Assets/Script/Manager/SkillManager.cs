@@ -4,8 +4,12 @@ public class SkillManager : MonoBehaviour
 {
     private static SkillManager _instance;
 
+
+
     public static SkillManager Instance
     {
+
+        //싱글톤
         get
         {
             if (_instance == null)
@@ -14,11 +18,14 @@ public class SkillManager : MonoBehaviour
                 GameObject obj = new GameObject("SkillManager");
                 _instance = obj.AddComponent<SkillManager>();
             }
+
             return _instance;
         }
+
     }
 
-    public CharacterJob[] Job; // 각 전직의 배열
+    [Header("세팅 직업")]
+    public CharacterJob Job; // 각 전직의 배열
 
     private void Awake()
     {
@@ -34,17 +41,11 @@ public class SkillManager : MonoBehaviour
 
     public void UseSkill1(int index, Vector2 position, Quaternion rotation)
     {
-        if (index < Job.Length)
-        {
-            Job[index].Skill1(position, rotation);
-        }
+        Job.Skill1(position, rotation);
     }
 
     public void UseSkill2(int index, Vector2 position, Quaternion rotation)
     {
-        if (index < Job.Length)
-        {
-            Job[index].Skill2(position, rotation);
-        }
+        Job.Skill2(position, rotation);
     }
 }
