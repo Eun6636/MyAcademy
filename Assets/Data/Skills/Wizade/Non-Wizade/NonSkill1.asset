@@ -16,6 +16,10 @@ MonoBehaviour:
   skillObject: {fileID: 0}
   skillSprite: {fileID: 0}
   sKillCollider: {fileID: 0}
+  elementTyp: 0
   baseDamage: 0
+  isAoE: 0
   cooldown: 0
   duration: 0
+  effects:
+  - {fileID: 11400000, guid: b8a42a19ee6d9f94e994d1b4a8114240, type: 2}

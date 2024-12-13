@@ -23,6 +23,7 @@ public class PlayerStats
     //민첩
     [Header("민첩")]
     public int quicknessLV;
+    public int curQuicknessLV;
     [Range(1f, 20f)] public float maxMoveSpeed;
     [Range(1f, 20f)] public float curMoveSpeed;
     [Range(1f, 2f)] public float attackSpeed;
@@ -30,14 +31,19 @@ public class PlayerStats
     //지력
     [Header("지력")]
     public int intellectualLV;
+    [Range(500f, 5000f)] public float macMP; //체력에도 영향받는게 좋을듯
+    [Range(0f, 5000f)] public float curMP;
     [Range(50f, 500f)] public float M_attackPower;
     [Range(1f, 500f)] public float AdvancedManaManagement;//고급마나운용
 
     //근력
     [Header("근력")]
     public int muscularStrengthLV;
+    public int curMuscularStrengthLV;
     [Range(50f, 500f)] public float p_attackPower;
     [Range(50f, 500f)] public float p_defense;
+
+    //---------------------------- 저기 위에는 구체적인 수치는 안알려주지만, 이거이거가 올라간다고는 표시해주기
 
     //원소 친화도
     //[Header("원소 친화도")]
@@ -69,15 +75,34 @@ public class PlayerStats
 
 
     //직업숙련도
-    //검술
+    //[Header("직업 숙련도")]
 
-    //마법
+    //[Header("검술")]
+    //공격력
+    //치확
+    //치피
+    //공격속도
 
-    //연금술
+    //[Header("마법")]
+    //공격력
+    //치확
+    //치피
+    //시전속도
+    //동시 운영 능력
 
-    //장인
+    //[Header("연금술")]
+    //숙련도
 
-    //사역
+    //[Header("장인")]
+    //숙련도
+
+    //[Header("사역")]
+    // 타입(사용원소) 원소에따라 공격파/ 힐파/ 서포터파로 나뉨
+    // 공격력
+    // 버프량
+    // 힐량
+
+
 
 
 
